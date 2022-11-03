@@ -18,6 +18,11 @@
             {% else %}
             <td>{{ item.name }}</td>
             {% endif %}
+            <td>
+                <a href="/edit/{{ item.id }}">
+                    <button>Edit</button>
+                </a>
+            </td>
         </tr>
         {% empty %}
         <tr>
@@ -25,7 +30,7 @@
         </tr>
         {% endfor %}
     </table>
-    <a href="/add">Add an Item</a>
+    <a href=" /add">Add an Item</a>
 </body>
 
 </html>
